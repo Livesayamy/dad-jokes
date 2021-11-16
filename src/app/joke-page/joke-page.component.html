@@ -1,0 +1,42 @@
+<!-- <div
+  class="container cc-look"
+  *ngIf="joke"
+  (click)="onFavorite()"
+  style="cursor: pointer"
+>
+  {{ joke.joke }}
+</div>
+<div *ngFor="let joke of jokeList; let i = index" class="list-container">
+  <div>
+    <span>{{joke.joke}}</span>
+    <button
+      class="btn btn-delete"
+      (click)="onDeleteJoke(joke.id)"
+      type="button">
+      Delete
+    </button>
+  </div>
+</div> -->
+<div class="container">
+<button class="btn btn-dark" (click)="onGetJoke(joke)" type="button">
+  Get Dad Joke
+</button>
+<button class="btn btn-success btn-sm" (click)="onFavorite()" type="button">
+  Favorite this joke
+</button>
+<div
+  class="container cc-look"
+  *ngIf="joke"
+  (click)="onFavorite()"
+  style="cursor: pointer"
+>
+  {{ joke.joke }}
+</div>
+<span>{{joke.joke}}</span>
+</div>
+    <!-- <button
+      class="btn btn-delete"
+      (click)="onDeleteJoke(joke.id)"
+      type="button">
+      Delete
+    </button> -->
